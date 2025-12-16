@@ -1,0 +1,11 @@
+cd /Users/taniabonilla/my-project
+source .venv/bin/activate
+pip install matplotlib
+pip freeze > requirements.txt
+git add requirements.txt
+git commit -m "Add matplotlib dependency"
+git push
+cd /Users/taniabonilla/my-project
+git add requirements.txt
+git commit -m "Fix requirements (include matplotlib)"
+git push
